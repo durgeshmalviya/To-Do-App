@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import { AuthContextProvider } from './Context/AuthContext';
 import Account from './Auth/Account';
 import Signin from './Auth/SignIn';
@@ -13,19 +13,19 @@ import '@fontsource/roboto/300.css';
 function App() {
   return (
     <AuthContextProvider>
-      <Router>
+      <Router basename="/todo">
         <DrawerAppBar />
-        <Link to="/https://todo-app-xrne.onrender.com"></Link>
-        <Link to="/https://todo-app-xrne.onrender.com/Login"></Link>
-        <Link to="/https://todo-app-xrne.onrender.com/Account"></Link>
-        <Link to="/https://todo-app-xrne.onrender.com/Signup"></Link>
-        <Link to="/https://todo-app-xrne.onrender.com/Todo"></Link>
+        <Link to="/"></Link>
+        <Link to="/Login"></Link>
+        <Link to="/Signup"></Link>
+        <Link to="/Account"></Link>
+        <Link to="/Todo"></Link>
         <Routes>
-          <Route path="/https://todo-app-xrne.onrender.com" element={<Home />} />
-          <Route path="/https://todo-app-xrne.onrender.com/Login" element={<Signin />} />
-          <Route path="/https://todo-app-xrne.onrender.com/Signup" element={<SignUp />} />
-          <Route path="/https://todo-app-xrne.onrender.com/Account" element={<Protected><Account/></Protected>} />
-          <Route path="/https://todo-app-xrne.onrender.com/Todo" element={<Protected><Todo/></Protected>} />
+          <Route path="/" element={<Home />} />
+          <Route path="/Login" element={<Signin />} />
+          <Route path="/Signup" element={<SignUp />} />
+          <Route path="/Account" element={<Protected><Account /></Protected>} />
+          <Route path="/Todo" element={<Protected><Todo /></Protected>} />
         </Routes>
       </Router>
     </AuthContextProvider>
