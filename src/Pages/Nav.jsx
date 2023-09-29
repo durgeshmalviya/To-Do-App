@@ -84,10 +84,10 @@ function DrawerAppBar(props) {
           </>
         ) : (
           <>
-            <Button variant='contained' fullWidth onClick={handleSignOut} style={{ color: 'brown', textDecoration: 'none', background: 'transparent', border: '1px solid white', borderRadius: '10px', padding: '15px' }}>
+            <Button variant='contained' fullWidth style={{ color: 'brown', textDecoration: 'none', background: 'transparent', border: '1px solid white', borderRadius: '10px', padding: '15px' }}>
               <Link to="/Login" style={{ color: 'white', textDecoration: 'none' }}>Login</Link>
             </Button>&nbsp;
-            <Button variant='contained' fullWidth onClick={handleSignOut} style={{ color: 'brown', textDecoration: 'none', background: 'transparent', border: '1px solid white', borderRadius: '10px', padding: '15px' }}>
+            <Button variant='contained' fullWidth style={{ color: 'brown', textDecoration: 'none', background: 'transparent', border: '1px solid white', borderRadius: '10px', padding: '15px' }}>
               <Link to='/Signup' style={{ color: 'white', textDecoration: 'none' }}>SignUp</Link>
             </Button>
           </>
