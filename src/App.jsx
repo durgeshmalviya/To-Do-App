@@ -15,17 +15,17 @@ function App() {
     <AuthContextProvider>
       <Router>
         <DrawerAppBar />
-        <Link to="/"></Link>
-        <Link to="/Login"></Link>
-        <Link to="/Account"></Link>
-        <Link to="/Signup"></Link>
-        <Link to="/Todo"></Link>
+        <Link to="/https://todo-app-xrne.onrender.com"></Link>
+        <Link to="/https://todo-app-xrne.onrender.com/Login"></Link>
+        <Link to="/https://todo-app-xrne.onrender.com/Account"></Link>
+        <Link to="/https://todo-app-xrne.onrender.com/Signup"></Link>
+        <Link to="/https://todo-app-xrne.onrender.com/Todo"></Link>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/Login" element={<Signin />} />
-          <Route path="/Signup" element={<SignUp />} />
-          <Route path="/Account" element={<Protected><Account/></Protected>} />
-          <Route path="/Todo" element={<Protected><Todo/></Protected>} />
+          <Route path="/https://todo-app-xrne.onrender.com" element={<Home />} />
+          <Route path="/https://todo-app-xrne.onrender.com/Login" element={<Signin />} />
+          <Route path="/https://todo-app-xrne.onrender.com/Signup" element={<SignUp />} />
+          <Route path="/https://todo-app-xrne.onrender.com/Account" element={<Protected><Account/></Protected>} />
+          <Route path="/https://todo-app-xrne.onrender.com/Todo" element={<Protected><Todo/></Protected>} />
         </Routes>
       </Router>
     </AuthContextProvider>
