@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import {  HashRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import { AuthContextProvider } from './Context/AuthContext';
 import Account from './Auth/Account';
 import Signin from './Auth/SignIn';
@@ -13,7 +13,7 @@ import '@fontsource/roboto/300.css';
 function App() {
   return (
     <AuthContextProvider>
-      <Router basename="/todo">
+      <Router>
         <DrawerAppBar />
         <Link to="/"></Link>
         <Link to="/Login"></Link>
