@@ -188,14 +188,12 @@ function DrawerAppBar(props) {
                   style={{ width: '85px', color: 'white', textDecoration: 'none', background: 'green', padding: '5px', border: '1px solid white', borderRadius: '90px' }}>
                   SignUp</Link></Button>
               )}
-              {user?.email ? (
+  
                 <Button style={{ marginTop: '5px', color: 'white' }} onClick={handleOpenCreditModal }>
                   <Typography style={{ color: 'white', width: '85px', textDecoration: 'none', background: 'green', padding: '5px', border: '1px solid white', borderRadius: '90px' }}
                   >Credit</Typography></Button>
-              ) : (
-                null
-              )}
-              &nbsp;
+            
+           
             </Box>
           </Toolbar>
         </AppBar>
